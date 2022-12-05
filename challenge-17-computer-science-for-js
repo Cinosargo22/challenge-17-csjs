@@ -1,0 +1,128 @@
+# Challenge-17-computer-science-for-js
+
+A regular expression also known as Regex is a sequence of characters that specifies a search pattern in text using Strings. 
+It's used to match certain patterns inside a "String"
+In this tutorial I'll be breaking doing an expression into their pieces to explain how Matching a URL using Regex. 
+
+
+
+## Summary
+
+This regex is going to be used to validate a URL through breaking down its components in Java Script.
+
+The search is contained in between the '/', '/' characters.
+
+Regex: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
+
+
+
+## Table of Contents (guide)
+
+- [Anchors](#anchors)
+
+Let's split this String into its first piece.
+
+The '^' (AKA Carrot) Anchors are used to contain the beginning of the String, where it's defined. 
+Example: `/^h` 
+
+
+The '$' is used to indicate the end of the String. 
+
+Example: `/?$/`
+
+'/^' and '$/' These are Anchors on the String. 
+
+
+- [Quantifiers](#quantifiers)
+
+Now we are going to Quantifiers. Quantifiers are used to specify the number of instances of a specific character 
+in a group or a character class.
+
+Example: "?" 
+
+
+The question mark says to match between 0 and 1 of the preceding characters. In the given regular expression, 
+it will match either http or https.
+
+`/^(https?:\/\/)
+
+
+- [Grouping Constructs](#grouping-constructs)
+Now let's delve into Grouping Constructs. Groups group multiple patterns as a whole, and capturing groups provide extra 
+information when using a regular expression pattern to match against a string.
+
+Example: () "(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*" 
+
+Here the "(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*" the given regular expression match a specific set being surrounded by parentheses.
+
+
+- [Bracket Expressions](#bracket-expressions)
+
+
+Next is Brackets. Brackets are a used to "hug" or enclose an expression. It used to match a specific set of single characters or a specific number of charachters within the "hug".
+
+Example: [] [\da-z\.-]
+
+Now [\da-z\.-] is going to match the specific set of character that's quoted within the brackets.
+
+
+- [Character Classes](#character-classes)
+
+Let's flow into Character Classes. WTF is that? Well Character Classes are very common. We use them in regular expressions. They are used to match the a case sensitive  character in the search as well as "regular characters".
+How nice of them to be inclusive, eh?
+
+Example: da-z\.
+
+That means that the match should be between a and z. 
+
+
+
+- [The OR Operator](#the-or-operator)
+
+
+- [Flags](#flags)
+
+Flags are usually at the beginning and the end of the expressions. 
+They're are used with global "g", multiline "m" or insensitive "i" to specify the criteria.
+
+Example: "/\/"
+
+
+- [Character Escapes](#character-escapes)
+
+Just like a prisoner on the run, Character Escapes is escaping from the range.
+They're escaping sequences to be inserted in special, reserved or Unicode characters. 
+
+Example: "\" "\da-z\."
+
+The escapee is treated as a host, he wants "." to be the one we're looking for.
+
+
+
+
+
+## Regex Components
+
+### Anchors
+
+### Quantifiers
+
+### Grouping Constructs
+
+### Bracket Expressions
+
+### Character Classes
+
+### The OR Operator
+
+### Flags
+
+### Character Escapes
+
+## Author
+
+Andres Covas
+Github: 
+Github Gist:
+
+
